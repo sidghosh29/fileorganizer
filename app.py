@@ -7,7 +7,7 @@ import time
 
 def load_config():
     config = {}
-    with open('paths.csv', 'r', newline='') as csv_file:
+    with open('paths.csv', 'r', newline='') as csv_file: # We use newline='' to disable Python's automatic newline handling, ensuring the csv module can correctly parse line endings across platforms without extra blank lines or data corruption.
         csv_reader = csv.reader(csv_file)
         next(csv_reader) # Here I am skipping the header row
         for row in csv_reader:
