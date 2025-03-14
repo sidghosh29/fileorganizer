@@ -15,7 +15,8 @@ A Python-based automated file organization tool that categorizes files from a so
   - **Image Files** (`.png`, `.jpg`, `.jpeg`)
   - **Video Files** (`.mp4`)
   - **Folders**
-- Skips processing for already-organized files or invalid directories (directories mentioned in the paths csv).
+- Skips processing for invalid directories (directories mentioned in the paths csv).
+- If there is already a file with the same name as the file to be moved, the file is moved but renamed by adding a timestamp suffix (format: filename_ddMMyyyy_hhmm)
 - Dynamically creates destination folders if they don’t exist.
 - Runs on a schedule (every 6 seconds in the current setup).
 
