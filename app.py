@@ -38,8 +38,10 @@ try:
                 if not os.path.exists(config['Music']):
                     os.makedirs(config['Music'])
                 if os.path.exists(dstMp3_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstMp3_path = os.path.join(config['Music'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
+                    # continue
                 # print("dstMp3_path: " + dstMp3_path)
                 os.rename(file_path, dstMp3_path)
             
@@ -48,8 +50,8 @@ try:
                 if not os.path.exists(config['Zip']):
                     os.makedirs(config['Zip'])
                 if os.path.exists(dstZip_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstZip_path = os.path.join(config['Zip'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstZip_path: " + dstZip_path)
                 os.rename(file_path, dstZip_path)
 
@@ -58,8 +60,10 @@ try:
                 if not os.path.exists(config['PDF']):
                     os.makedirs(config['PDF'])
                 if os.path.exists(dstPDF_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstPDF_path = os.path.join(config['PDF'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
+                    # continue
                 # print("dstPDF_path: " + dstPDF_path)
                 os.rename(file_path, dstPDF_path)
 
@@ -68,8 +72,9 @@ try:
                 if not os.path.exists(config['Word']):
                     os.makedirs(config['Word'])
                 if os.path.exists(dstWord_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstWord_path = os.path.join(config['Word'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstWord_path: " + dstWord_path)
                 os.rename(file_path, dstWord_path)
                 
@@ -78,8 +83,9 @@ try:
                 if not os.path.exists(config['Excel']):
                     os.makedirs(config['Excel'])
                 if os.path.exists(dstExcel_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstExcel_path = os.path.join(config['Excel'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstExcel_path: " + dstExcel_path)
                 os.rename(file_path, dstExcel_path)
                 
@@ -88,8 +94,9 @@ try:
                 if not os.path.exists(config['CSV']):
                     os.makedirs(config['CSV'])
                 if os.path.exists(dstCSV_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstCSV_path = os.path.join(config['CSV'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstCSV_path: " + dstCSV_path)
                 os.rename(file_path, dstCSV_path)
             
@@ -98,8 +105,9 @@ try:
                 if not os.path.exists(config['PPT']):
                     os.makedirs(config['PPT'])
                 if os.path.exists(dstPPT_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstPPT_path = os.path.join(config['PPT'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstPPT_path: " + dstPPT_path)
                 os.rename(file_path, dstPPT_path)
             
@@ -108,8 +116,9 @@ try:
                 if not os.path.exists(config['Installers']):
                     os.makedirs(config['Installers'])
                 if os.path.exists(dstInstallers_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstInstallers_path = os.path.join(config['Installers'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstInstallers_path: " + dstInstallers_path)
                 os.rename(file_path, dstInstallers_path)
 
@@ -119,8 +128,9 @@ try:
                 if not os.path.exists(config['IMG']):
                     os.makedirs(config['IMG'])
                 if os.path.exists(dstIMG_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstIMG_path = os.path.join(config['IMG'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstIMG_path: " + dstIMG_path)
                 os.rename(file_path, dstIMG_path)
 
@@ -129,8 +139,9 @@ try:
                 if not os.path.exists(config['Video']):
                     os.makedirs(config['Video'])
                 if os.path.exists(dstVideo_path):
-                    print(f + " already exists in destination folder.")
-                    continue
+                    print(f + " already exists in destination folder. Renaming it with timestamp.")
+                    timestamp = time.strftime("%d%m%Y_%H%M")
+                    dstVideo_path = os.path.join(config['Video'], os.path.splitext(f)[0] + "_" + timestamp+os.path.splitext(f)[1])
                 # print("dstVideo_path: " + dstVideo_path)
                 os.rename(file_path, dstVideo_path)
             
@@ -148,7 +159,7 @@ try:
 
 
 except Exception as e:
-    print("Exception found in the fie_organizer function:", e)
+    print("Exception found in the file_organizer function:", e)
 
 
 schedule.every(0.1).minutes.do(file_organizer)
