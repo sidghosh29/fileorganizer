@@ -38,7 +38,7 @@ try:
                 if not os.path.exists(config['Music']):
                     os.makedirs(config['Music'])
                 if os.path.exists(dstMp3_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstMp3_path: " + dstMp3_path)
                 os.rename(file_path, dstMp3_path)
@@ -48,7 +48,7 @@ try:
                 if not os.path.exists(config['Zip']):
                     os.makedirs(config['Zip'])
                 if os.path.exists(dstZip_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstZip_path: " + dstZip_path)
                 os.rename(file_path, dstZip_path)
@@ -58,7 +58,7 @@ try:
                 if not os.path.exists(config['PDF']):
                     os.makedirs(config['PDF'])
                 if os.path.exists(dstPDF_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstPDF_path: " + dstPDF_path)
                 os.rename(file_path, dstPDF_path)
@@ -68,7 +68,7 @@ try:
                 if not os.path.exists(config['Word']):
                     os.makedirs(config['Word'])
                 if os.path.exists(dstWord_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstWord_path: " + dstWord_path)
                 os.rename(file_path, dstWord_path)
@@ -78,7 +78,7 @@ try:
                 if not os.path.exists(config['Excel']):
                     os.makedirs(config['Excel'])
                 if os.path.exists(dstExcel_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstExcel_path: " + dstExcel_path)
                 os.rename(file_path, dstExcel_path)
@@ -88,7 +88,7 @@ try:
                 if not os.path.exists(config['CSV']):
                     os.makedirs(config['CSV'])
                 if os.path.exists(dstCSV_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstCSV_path: " + dstCSV_path)
                 os.rename(file_path, dstCSV_path)
@@ -98,7 +98,7 @@ try:
                 if not os.path.exists(config['PPT']):
                     os.makedirs(config['PPT'])
                 if os.path.exists(dstPPT_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstPPT_path: " + dstPPT_path)
                 os.rename(file_path, dstPPT_path)
@@ -108,7 +108,7 @@ try:
                 if not os.path.exists(config['Installers']):
                     os.makedirs(config['Installers'])
                 if os.path.exists(dstInstallers_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstInstallers_path: " + dstInstallers_path)
                 os.rename(file_path, dstInstallers_path)
@@ -119,7 +119,7 @@ try:
                 if not os.path.exists(config['IMG']):
                     os.makedirs(config['IMG'])
                 if os.path.exists(dstIMG_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstIMG_path: " + dstIMG_path)
                 os.rename(file_path, dstIMG_path)
@@ -129,20 +129,20 @@ try:
                 if not os.path.exists(config['Video']):
                     os.makedirs(config['Video'])
                 if os.path.exists(dstVideo_path):
-                    print(f + "already exists in destination folder.")
+                    print(f + " already exists in destination folder.")
                     continue
                 # print("dstVideo_path: " + dstVideo_path)
                 os.rename(file_path, dstVideo_path)
             
             elif os.path.isdir(file_path):
                 if not is_valid_directory(file_path):
-                    print("Folder should not moved")
+                    print("Folder should not be moved")
                 else:
                     dstFolder_path = os.path.join(config['Folder'], f)
                     if not os.path.exists(config['Folder']):
                         os.makedirs(config['Folder'])
                     if os.path.exists(dstFolder_path):
-                        print(f + "already exists in destination folder.")
+                        print(f + " already exists in destination folder.")
                         continue
                     os.rename(file_path, dstFolder_path)
 
